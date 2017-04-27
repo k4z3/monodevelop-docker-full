@@ -8,7 +8,7 @@ unzip protoc-3.2.0-linux-x86_64.zip -d protoc3 && \
 mv protoc3/bin/protoc /usr/bin/protoc && \
 cd /tmp && \
 curl -O http://download.redis.io/redis-stable.tar.gz && tar xzvf redis-stable.tar.gz && \
-cd redis-stable && make && make install && mkdir /etc/redis && cp /tmp/redis-stable/redis.conf /etc/redis && rm -rf /tmp && apt-get autoclean && rm -rf /var/lib/apt/lists/* 
+cd redis-stable && make && make install && mkdir /etc/redis && cp /tmp/redis-stable/redis.conf /etc/redis && rm -rf /tmp && rm -rf /var/lib/apt/lists/* 
 
 
 WORKDIR /home
